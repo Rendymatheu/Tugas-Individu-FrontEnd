@@ -1,2 +1,2 @@
-# Tugas-Individu-FrontEnd
-Tugas Kuliah individu FRONTEND PROGAMMING
+Tugas1_535240129_RENDYMATHEU
+tugas 1 FrontEnd Rendy Matheu 535240129
