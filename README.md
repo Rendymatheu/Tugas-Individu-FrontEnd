@@ -1,2 +1,5 @@
-Tugas1_535240129_RENDYMATHEU
-tugas 1 FrontEnd Rendy Matheu 535240129
+# Tugas 1 FrontEnd
+
+**Nama:** Rendy Matheu  
+**NIM:** 535240129  
+**Keterangan:** Tugas Individu FrontEnd Programming
