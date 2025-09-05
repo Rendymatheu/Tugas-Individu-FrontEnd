@@ -3,134 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Rendy Matheu</title>
+  <title>Biodata Rendy Matheu</title>
   <style>
+    /* Atur tampilan dasar halaman */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f6fa;
-      color: #333;
-      line-height: 1.6;
+      background-color: #fff;
     }
 
+    /* Bagian atas halaman (judul) */
     header {
-      background: linear-gradient(135deg, #4a90e2, #005bea);
-      color: white;
+      background-color: #8800ff;
+      color: black;
       text-align: center;
-      padding: 60px 20px;
-    }
-
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
+      padding: 40px;
     }
 
     header h1 {
-      margin: 10px 0;
-      font-size: 2.2rem;
+      margin: 0;
     }
 
-    header p {
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-
+    /* Kontainer utama supaya foto dan data diri sejajar */
     .container {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 20px;
+      display: flex;
+      max-width: 900px;
+      margin: 30px auto;
+      gap: 20px;
     }
 
-    section {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    section h2 {
-      margin-bottom: 15px;
-      border-left: 5px solid #4a90e2;
-      padding-left: 10px;
-      font-size: 1.4rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    footer {
+    /* Bagian foto */
+    .foto {
+      flex: 1;
       text-align: center;
-      padding: 15px;
-      background: #4a90e2;
+    }
+
+    .foto img {
+      width: 300px;
+      border: 3px solid #9f0cef;
+    }
+
+    /* Bagian biodata (teks + tabel) */
+    .biodata {
+      flex: 2;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .biodata h2 {
+      margin-top: 0;
+    }
+
+    /* Tabel data diri */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table th, table td {
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    table th {
+      width: 30%;
+      background: #007bff;
       color: white;
     }
 
-    /* Responsive */
+    /* Bagian footer (paling bawah) */
+    footer {
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    /* Supaya rapi kalau dibuka di HP */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.6rem;
+      .container {
+        flex-direction: column;
+        align-items: center;
       }
 
-      section {
-        padding: 15px;
+      .foto img {
+        width: 200px;
       }
     }
   </style>
 </head>
 <body>
+
+  <!-- Judul halaman -->
   <header>
-    <img src="FotoWajah.jpeg" alt="Foto Profil">
-    <h1>Rendy Matheu</h1>
-    <p>Mahasiswa Teknik Informatika | Universitas Tarumanagara</p>
+    <h1>Profil Biodata</h1>
   </header>
 
+  <!-- Isi utama -->
   <div class="container">
-    <section>
-      <h2>Tentang Saya</h2>
-      <p>Saya seorang mahasiswa Teknik Informatika dengan minat besar pada pengembangan web dan teknologi digital. Terbiasa bekerja dengan HTML, CSS, JavaScript, dan selalu bersemangat mempelajari hal baru.</p>
-    </section>
+    <!-- Foto Profil -->
+    <div class="foto">
+      <img src="FotoWajah.jpeg" alt="Foto Profil Rendy">
+    </div>
 
-    <section>
-      <h2>Pendidikan</h2>
-      <ul>
-        <li><b>Universitas Tarumanagara</b> – Teknik Informatika (2024 - Sekarang)</li>
-        <li><b>SMA ANUGRAH TANJUNGPANDAN</b> – IPA (2020 - 2023)</li>
-      </ul>
-    </section>
+    <!-- Data Diri -->
+    <div class="biodata">
+      <h2>Rendy Matheu</h2>
+      <p>Halo, saya mahasiswa Teknik Informatika yang tertarik dengan pemrograman web. Saya biasa pakai HTML, CSS, dan JavaScript, serta suka belajar hal-hal baru di dunia IT.</p>
 
-    <section>
-      <h2>Pengalaman</h2>
-      <ul>
-      <li>Berhasil bikin project pertama yang benar-benar jalan.</li>   <li>Misalnya bikin website sederhana, aplikasi mobile, atau automasi kecil yang beneran kepakai.</li>      <li>Rasa puasnya luar biasa karena kamu lihat sesuatu hidup dari hasil kodingan sendiri.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Keterampilan</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Kontak</h2>
-      <p>Email: rendymatheu52@gmail.com</p>
-      <p>No. HP: 082177373376</p>
-    </section>
+      <h3>Data Diri</h3>
+      <table>
+        <tr>
+          <th>Nama</th>
+          <td>Rendy Matheu</td>
+        </tr>
+        <tr>
+          <th>NIM</th>
+          <td>535240129</td>
+        </tr>
+        <tr>
+          <th>Jurusan</th>
+          <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+          <th>Fakultas</th>
+          <td>Teknologi Informasi</td>
+        </tr>
+        <tr>
+          <th>Universitas</th>
+          <td>Universitas Tarumanagara</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>rendymatheu52@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Agama</th>
+          <td>Buddha</td>
+        </tr>
+        <tr>
+          <th>Hobi</th>
+          <td>Catur</td>
+        </tr>
+      </table>
+    </div>
   </div>
 
+  <!-- Bagian paling bawah -->
   <footer>
-    © 2025 Rendy Matheu - Curriculum Vitae (CV)
+    @ Biodata Rendy Matheu @
   </footer>
+
 </body>
 </html>
